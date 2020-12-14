@@ -8,7 +8,7 @@ sbatch slurm.sh config/2d_unet.json 2d_unet 200
 ```
 
 Which will load the setup from the `config/2d_unet.json` file, train for 200 epochs
-and store the results in the folder `$HOME/logs/hn_perf/2d_unet/`.
+and store the results in the folder `$HOME/hnperf/2d_unet/`.
 
 To customize model and prediction checkpoints
 
