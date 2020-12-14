@@ -19,7 +19,7 @@ sbatch slurm.sh config/3d_vnet_32_normalize.json 3d_vnet_32_normalize 100 --mode
 
 To continue an experiment
 ```
-sbatch slurm_cont.sh 3d_vnet_32_normalize/model/model.030.h5 3d_vnet_32_normalize 100 --model_checkpoint_period 5 --prediction_checkpoint_period 5
+sbatch slurm_cont.sh ../hnperf/3d_vnet_32_normalize/model/model.030.h5 3d_vnet_32_normalize 100 --model_checkpoint_period 5 --prediction_checkpoint_period 5
 ```
 
 To plot performance
