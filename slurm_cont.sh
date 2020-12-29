@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --ntasks=1               # 1 core(CPU)
 #SBATCH --nodes=1                # Use 1 node
-#SBATCH --job-name=hn_cont   # sensible name for the job
+#SBATCH --job-name=msc_cont   # sensible name for the job
 #SBATCH --mem=16G                 # Default memory per CPU is 3GB.
 #SBATCH --partition=gpu # Use the verysmallmem-partition for jobs requiring < 10 GB RAM.
 #SBATCH --gres=gpu:1
@@ -28,7 +28,7 @@ if [ $# -lt 3 ];
 if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     then
     echo "Didn't find dataset folder. Copying files..."
-    mkdir $TMPDIR/$USER/hn_delin
+    mkdir --parents $TMPDIR/$USER/hn_delin
     fi
 
 for f in $(ls $HOME/datasets/headneck/*)
