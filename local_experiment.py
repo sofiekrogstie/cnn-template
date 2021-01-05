@@ -15,7 +15,7 @@ if __name__ == '__main__':
     Experiment(
         log_base_path='../../hn_perf/unet_test'
         ).from_full_config(
-            'config/2d_unet_CT_W_PET.json'
+            'config/local_2d_unet_CT_W_PET.json'
         ).run_experiment(
             train_history_log=True,
             model_checkpoint_period=1,
