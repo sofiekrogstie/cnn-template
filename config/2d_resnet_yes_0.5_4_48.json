@@ -40,11 +40,11 @@
                         ]
                     }
                 }
-            ]       
+            ]
         }
     },
     "train_params": {
-        "epochs": 5,
+        "epochs": 200,
         "callbacks": [
             {
                 "class_name": "EarlyStopping",
